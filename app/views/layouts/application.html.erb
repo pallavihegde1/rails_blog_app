@@ -9,16 +9,22 @@
 <body>
  <div id="wrapper">
   <div class="overlay"></div>
-    
-<%= render 'layouts/side_nav' %>
-            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-                <span class="hamb-top"></span>
-          <span class="hamb-middle"></span>
+    <%= render 'layouts/side_nav' %>
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
         <span class="hamb-bottom"></span>
-            </button>
-   <div id="page-content-wrapper">
-<%= yield %>
-</div>
+      </button>
+      <div id="page-content-wrapper">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
 
+        <%= yield %>
+      </div>
+      </div>
+      </div>  
+      </div>
+  </div>
 </body>
 </html>
