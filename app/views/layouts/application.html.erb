@@ -15,6 +15,10 @@
         <span class="hamb-middle"></span>
         <span class="hamb-bottom"></span>
       </button>
+        <% flash.each do |name, msg| %>
+            <div class="alert alert-<%= name %>"><%= msg %></div>
+        <% end %>
+
       <div id="page-content-wrapper">
       <div class="container">
       <div class="row">
