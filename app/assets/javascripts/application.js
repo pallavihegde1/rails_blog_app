@@ -44,3 +44,20 @@ $(document).ready(function () {
         $('#wrapper').toggleClass('toggled');
   });  
 });
+
+var rotateCard;
+
+rotateCard = function(btn) {
+  var $card;
+  $card = $(btn).closest('.card-container');
+  console.log($card);
+  if ($card.hasClass('hover')) {
+    $card.removeClass('hover');
+  } else {
+    $card.addClass('hover');
+  }
+};
+
+$().ready(function() {
+  $('[rel="tooltip"]').tooltip();
+});
