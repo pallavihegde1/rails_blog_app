@@ -25,6 +25,9 @@
                 <li>
                     <a href="https://twitter.com/pallavihegde1">Follow me</a>
                 </li>
+                <li>
+                    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %> 
+                </li>
             </ul>
         </nav>
         <!-- /#sidebar-wrapper -->
